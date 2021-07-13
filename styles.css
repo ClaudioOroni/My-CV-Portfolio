@@ -1,0 +1,305 @@
+body {
+  color: #40514E;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.875rem;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 15rem;
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #66BFBF;
+  font-size: 55px;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #11999E;
+  font-size: 45px;
+}
+
+a {
+  color: #11999E;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 25%;
+  color: white;
+}
+
+.through {
+  color: #11999E;
+}
+
+#my-profile {
+  background-color: #eeeeee;
+
+}
+
+.navbar2 {
+left: 2rem;
+
+
+}
+.navbar {
+  padding: 0 20rem;
+  position: absolute;
+  z-index: 10;
+  top:2rem;
+  right: 1rem;
+}
+
+
+#top .container-fluid {
+
+  text-align: left;
+}
+
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+*{ margin: 0; padding: 0;}
+
+#clouds{
+	padding-top: 300px;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+
+	position: relative;
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute;
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 1100px;
+
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: 1000px; top: 280px;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+.horse-stand {
+  height: 10rem;
+
+}
+
+.mountain {
+  height: 50rem;
+  text-align: center;
+}
+
+
+.pro {
+  text-decoration: underline;
+}
+
+.hello {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem
+}
+
+#the-skills {
+  background-color: #66BFBF;
+
+}
+.skills {
+  padding: 5rem 1rem;
+  padding-bottom: 20rem;
+}
+
+.my-skills{
+  color: #ffff;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+
+#contact {
+  background-color: #eeeeee;
+  padding: 15rem 1rem;
+
+}
+.footer-link {
+  margin-right: 2rem;
+}
+
+.footer-link:hover {
+  color: #ffff;
+}
+
+#bottom {
+  background-color: #aad8d3;
+  padding: 5rem 1rem;
+}
+
+
+.doughnut {
+  height: 10rem;
+}
+
+
+
+.navbar-brand{
+  font-size: 2rem;
+}
+
+.nav-link {
+  margin-right: 1.5rem;
+}
+
+
+.profile {
+  padding: 15rem 1rem;
+  padding-bottom: 20rem;
+}
+
+
+
+.from-age{
+  text-align: center;
+}
+
+.doughnut {
+  width: 100px;
+  height: 100px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+/* .code {
+  float:inherit;
+  height: 25rem;
+  padding-right: 1rem;
+  border-radius: 100%;
+} */
+
+/* .horse {
+  float: right;
+  height: 20rem;
+  border-radius: 100%;
+} */
